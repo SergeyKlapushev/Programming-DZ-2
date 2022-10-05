@@ -2,10 +2,10 @@
 
 6 -> да
 7 -> да
-1 -> нет*/
+1 -> нет */
+
 
 string [] week = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
-Console.Write("Введите цифру дня недели: ");
 int day = Convert.ToInt32(Console.ReadLine());
 
 if (day>7 || day<1)
@@ -13,12 +13,12 @@ if (day>7 || day<1)
     Console.WriteLine("Такого для несуществует");
 }
 
-if (week[day-1] == "Суббота" || week[day-1] == "Воскресенье")
+if (day == 6 || day ==7)
 {
-    Console.WriteLine(week[day-1] +" - выходной");
+    Console.WriteLine(week[day-1] + " - выходной");
 }
 
-if (day >=1 && day <=5)
+if (day >= 1 && day <=5)
 {
-    Console.WriteLine(week[day-1] +" - невыходной");
+    Console.WriteLine(week[day-1] + " - не выходной");
 }
