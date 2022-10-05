@@ -2,7 +2,7 @@
 
 645 -> 5
 78 -> третьей цифры нет
-326792 -> 6 */
+326792 -> 6  */
 
 Console.Write("Введите число: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
